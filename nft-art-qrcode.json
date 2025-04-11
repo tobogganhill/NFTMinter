@@ -1,0 +1,19 @@
+{
+	"attributes": [
+		{
+			"trait_type": "Subject",
+			"value": "Flowers"
+		},
+		{
+			"trait_type": "Artwork",
+			"value": "Abstract"
+		},
+		{
+			"trait_type": "Artist",
+			"value": "Tanya Smith"
+		}
+	],
+	"description": "Web3 Flower Collection",
+	"image": "https://amaranth-hidden-mastodon-476.mypinata.cloud/ipfs/bafybeidhfboknfc4wlubo4dovkoqr2e33bewpg5armillx5fflruogoexq",
+	"name": "Opus 1001"
+}

@@ -1,0 +1,61 @@
+// 1. Install hardhat as the dev environment
+npm init -y
+
+// shortcut for --save-dev. Package will appear in devDependencies
+npm add hardhat -D
+
+// NPX is an NPM package used to execute any package on the NPM registry directly without installing it
+npx hardhat
+
+// 2. Connect your MetaMask wallet and Alchemy
+- Download and create a MetaMask account
+-Make sure to point to Sepolia
+- get some SepoliaETH from a faucet
+
+On Alchemy's Dashboard...
+1. Create an App
+2. Provide a name and description of your app
+3. For chain, select Ethereum, Network: Sepolia
+4. Click the Create App button. Click on app's ViewKey button in the dashboard and save the API key in .env file in your project's root directory
+
+3. Update the .env file
+ALCHEMY_API_KEY = "<your API key>"
+METAMASK_PRIVATE_KEY = "0x<your MetaMask private key>"
+
+4. Write a deployment script
+
+5. Compile and Deploy
+- cd to your root directory NFT_MINT_DAPP
+- npx hardhat compile
+- npx hardhat run scripts/deploy.js --network sepolia
+(make note of the contract deployment address which will be added to App.js)
+
+6. Frontend implementation
+- npx create-react-app nft_mint_frontend
+- cd nft_mint_frontend
+- npm start
+
+7. Get the contract ABI and address
+- to find your ABI file, navigate to: artifacts\contracts\nftMint.sol\nftMint.json
+(change the contract address in App.js (which we still have to create))
+
+8. Update src\App.js
+- modify your user interface as you like
+- in mintNFTHandler, update the mint function which is the same as your smart contract mint function
+
+9. Update App.css
+- if you want to style the frontend interface
+
+10. Start the development server
+- cd nft_mint_frontend
+- npm start
+
+......................................................
+
+
+
+
+
+
+
+
