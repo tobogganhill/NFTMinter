@@ -5,9 +5,9 @@
 
 
 
-**1. To start the project, move to nft_mint_frontend folder** 
+**1. To start the project, move to client** 
 
-      cd nft_mint_frontend
+      cd client
  
  
  **2. This folder contains the frontend side of the Dapp, Now install the node modules** 
