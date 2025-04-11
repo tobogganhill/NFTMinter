@@ -53,6 +53,7 @@ function App() {
 				const signer = provider.getSigner();
 				const nftContract = new ethers.Contract(contractAddressNFT, abi, signer);
 				setMessage('Authorize payment to mint NFT.');
+				// change the URI to your metadata json stored on IPFS (Pinata)
 				let nftTxn = await nftContract.mintNFT(currentAccount, 'https://amaranth-hidden-mastodon-476.mypinata.cloud/ipfs/bafkreic7jpftx6vpe4loa3ywivrzibw7eqdf3gsldqkqm3esc25fjvmexq');
 				setMessage('Validating...');
 				await nftTxn.wait();
